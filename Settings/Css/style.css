@@ -278,70 +278,96 @@ p {
     }
 }
 
-/* ---------------------PROFILE PAGE------------------------- */
+/* ---------------------SETTINGS PAGE------------------------- */
 
-/* Overall container styles */
-.dashboard-menu {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 0 0 20px rgb(200, 200, 200);
-}
-
-/* Title styles */
-.dashboard-title {
-    text-align: center;
-    font-size: 40px;
-    color: #333;
-    height: auto;
-    margin-top: 9vh;
-    text-shadow: 2px 2px 2px rgb(200, 200, 200);
-}
-
-/* Field styles */
-.field {
-    margin-bottom: 15px;
-}
-
-/* Input styles */
-.field input[type="text"],
-.field input[type="number"],
-.field input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+.container {
     box-sizing: border-box;
-    font-size: 16px;
+    background-color: white;
+    padding: 10px 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(200, 200, 200);
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+    margin-top: 12vh;
 }
 
-/* Label styles */
-.field label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
-    color: #666;
+.container h1, h3 {
+    font-weight: 600;
+    padding-bottom: 10px;
 }
 
-/* Button styles */
-.field .btn {
-    background-color: var(--green);
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    border-radius: 4px;
+.container span {
+    font-weight: 500;
+}
+
+.toggle-container {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.toggle {
+    width: 60px;
+    height: 35px;
+    border-radius: 40px;
+    background-color: #EBEBFB;
+    display: inline-block;
+}
+
+.toggle-c {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    transition: 300ms all;
+    border: 1px solid #8C8CA4;
+}
+
+.container input[type="checkbox"] {
+    display: none;
+}
+
+.container input[type="checkbox"]:checked + div .toggle-c {
+    left: 30px;
+    background-color: #30305C;
+    border-color: #30305C;
+}
+
+.container input[type="radio"] {
+    border: 0px;
+    width: 10%;
+    height: 20px;
+    accent-color: black;
+}
+
+.togg-label {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    float: right;
 }
 
-.field .btn:first-child {
-    float: left;
+.flex {
+    display: flex;
+    gap: 5px;
 }
 
-.field .btn:hover {
-    background-color: var(--green);
+.bottom {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.bottom:hover {
+    text-decoration: underline;
+}
+
+.container > label, input[type="radio"] {
+    cursor: pointer;
 }
