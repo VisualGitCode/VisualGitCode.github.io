@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style -->
+     <link rel="stylesheet" href="/History/Css/style.css">
+     <!-- font: Notosans -->
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+      <!-- icons: font awesome -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Responsive Food QR Code</title>
+</head>
+<body>
+    <!-- header -->
+     <input type="checkbox" checked id="cart">
+     <label for="cart" class="label-cart"><span class="fas fa-shopping-cart"></span></label>
+     <h4 class="login">Log Out</h4>
+     <h3 class="logo">Food QR Code Services</h3>
+     
+    <!-- sidebar -->
+     <div class="sidebar">
+        <div class="sidebar-menu">
+            <span class="fas fa-search"></span>
+            <a href="#">Search</a>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-edit"></span>
+            <a href="#">Modify</a>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-home"></span>
+            <a href="/index.html">Home</a>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-clipboard-list"></span>
+            <a href="/History/history.html">History</a>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-user"></span>
+            <a href="/Profile/profile.html">Profile</a>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-sliders-h"></span>
+            <a href="/Settings/settings.html">Settings</a>
+        </div>
+     </div>
+
+    <!-- main dashboard -->
+     <div class="dashboard">
+        <table class="content-table"> 
+            <thead>
+              <tr>
+                <th>Bil</th>
+                <th>Customer</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Domenic <br>
+                    <span class="Order-Date">17 August 2024</span></td>
+                <td>$30</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>John  <br>
+                    <span class="Order-Date">8 June 2024</span></td></td>
+                <td>$50</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Nick  <br>
+                    <span class="Order-Date">9 May 2024</span></td></td>
+                <td>$66</td>
+              </tr>
+            </tbody>
+        </table>
+
+     </div>
+
+    <!-- order dashboard -->
+     <div class="dashboard-order">
+        <h3>Order Menu</h3>
+        <div class="order-address">
+            <p>Address Delivery</p>
+            <h4>221 B Baker Street, London</h4>
+        </div>
+        <div class="order-time">
+            <span class="fas fa-clock"></span> 30 mins <span class="fas fa-map-marker-alt"></span> 2 km
+        </div>
+
+        <div class="order-wrapper">
+            <div class="order-card">
+                <img class="order-image" src="/Image/Menu_1 FriedEggSandwich.jpg" alt="">
+                <div class="order-detail">
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <i class="fas fa-times"></i> <input type="text" value="1">
+                </div>
+                <h4 class="order-price">$30</h4>
+            </div>
+        </div>
+        <hr class="divider">
+        <div class="order-total">
+            <p>Subtotal <span>$30</span></p>
+            <p>Tax (10%) <span>$3</span></p>
+
+            <div class="order-promo">
+                <input class="input-promo" type="text" placeholder="Apply Voucher">
+                <button class="button-promo">Find Promo</button>
+            </div>
+            <hr class="divider">
+            <p>Total <span>$33</span></p>
+        </div>
+        <button class="checkout">
+            Checkout
+        </button>
+     </div>
+
+</body>
+</html>
