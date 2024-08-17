@@ -362,10 +362,11 @@ p {
 .bottom {
     margin-top: 20px;
     margin-bottom: 30px;
+    text-decoration: underline;
 }
 
 .bottom:hover {
-    text-decoration: underline;
+    text-transform: uppercase;
 }
 
 .container > label, input[type="radio"] {
