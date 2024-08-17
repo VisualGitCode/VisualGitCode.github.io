@@ -288,6 +288,7 @@ p {
     border-radius: 20px;
     background-color: white;
     box-shadow: 0 0 20px rgb(200, 200, 200);
+    margin-top: 9vh;
 }
 
 /* Title styles */
@@ -296,8 +297,6 @@ p {
     font-size: 40px;
     color: #333;
     height: auto;
-    margin-top: 9vh;
-    text-shadow: 2px 2px 2px rgb(200, 200, 200);
 }
 
 /* Field styles */
