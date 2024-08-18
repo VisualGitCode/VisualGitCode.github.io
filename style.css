@@ -342,7 +342,7 @@ p {
 }
 
 #cart:checked ~ .dashboard {
-    padding-right: 10px;
+    padding-right: 5px;
 }
 
 #cart:checked ~ .dashboard-order {
@@ -366,7 +366,7 @@ p {
 
 .label-overlay {
     position: fixed;
-    bottom: 10px;
+    bottom: 5px;
     left: 55px;
     z-index: 1;
     font-size: 25px;
@@ -382,9 +382,9 @@ p {
 }
 
 #overlay:checked ~ .label-overlay {
-    left: 10px;
+    left: 5px;
 }
 
 #overlay:checked ~ .dashboard {
-    padding-left: 10px;
+    padding-left: 5px;
 }
