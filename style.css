@@ -363,3 +363,28 @@ p {
         left: 0;
     }
 }
+
+.label-overlay {
+    position: fixed;
+    bottom: 10px;
+    left: 55px;
+    z-index: 1;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#overlay {
+    display: none;
+}
+
+#overlay:checked ~ .sidebar {
+    display: none;
+}
+
+#overlay:checked ~ .label-overlay {
+    left: 10px;
+}
+
+#overlay:checked ~ .dashboard {
+    padding-left: 10px;
+}
