@@ -284,9 +284,9 @@ p {
 
 .label-overlay {
     position: fixed;
-    bottom: 10px;
-    left: 55px;
-    z-index: 1;
+    bottom: 5px;
+    left: 15px;
+    z-index: 2;
     font-size: 25px;
     cursor: pointer;
 }

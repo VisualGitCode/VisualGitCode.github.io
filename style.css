@@ -367,8 +367,8 @@ p {
 .label-overlay {
     position: fixed;
     bottom: 5px;
-    left: 55px;
-    z-index: 1;
+    left: 15px;
+    z-index: 2;
     font-size: 25px;
     cursor: pointer;
 }
