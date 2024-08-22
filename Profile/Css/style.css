@@ -99,13 +99,6 @@ p {
     color: var(--yellow);
 }
 
-.dashboard {
-    height: 100%;
-    width: 100%;
-    padding-right: 360px;
-    padding-left: 60px;
-}
-
 .dashboard-title {
     padding: 0 1rem;
     font-size: 1.5rem;
@@ -309,8 +302,15 @@ p {
 
 /* ---------------------PROFILE PAGE------------------------- */
 
+.profile {
+    height: 100%;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 60px;
+}
+
 /* Overall container styles */
-.dashboard-menu {
+.profile-container {
     max-width: 100%;
     margin: 0 auto;
     padding: 20px;
@@ -318,10 +318,11 @@ p {
     background-color: white;
     box-shadow: 0 0 20px rgb(200, 200, 200);
     margin-top: 9vh;
+    padding-bottom: 8vh;
 }
 
 /* Title styles */
-.dashboard-title {
+.profile-title {
     text-align: center;
     font-size: 35px;
     color: #333;

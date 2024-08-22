@@ -99,13 +99,6 @@ p {
     color: var(--yellow);
 }
 
-.dashboard {
-    height: 100%;
-    width: 100%;
-    padding-right: 360px;
-    padding-left: 60px;
-}
-
 .dashboard-title {
     padding: 0 1rem;
     font-size: 1.5rem;
@@ -309,6 +302,15 @@ p {
 
 /* ---------------------HISTORY PAGE------------------------- */
 
+.history {
+    height: 100%;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 60px;
+    background-color: white;
+    padding-bottom: 10px;
+}
+
 .content-table {
     border-collapse: collapse;
     margin: 25px 0;
@@ -352,9 +354,4 @@ p {
 .order-history > h3 {
     padding-top: 20px;
     font-size: 40px;
-}
-
-.dashboard {
-    background-color: white;
-    padding-bottom: 10px;
 }

@@ -1,3 +1,5 @@
+/********************************************** COLOR VARIABLES **********************************************/
+/*! Define color variables for use throughout the CSS */
 :root {
     --mainColor: #f6f7fa;
     --darkBlack: #2d2f31;
@@ -13,6 +15,8 @@
     --lightDarkBlue: #8C8CA4;
 }
 
+/********************************************** BASIC STYLING **********************************************/
+/*! Basic styling for all elements */
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +25,7 @@
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+/*! Body styling with background color and text color */
 body {
     width: 100%;
     height: auto;
@@ -28,10 +33,13 @@ body {
     background-color: #e4e9f7;
 }
 
+/*! Styling for paragraph elements */
 p {
     font-size: 14px;
 }
 
+/********************************************** HEADER STYLING **********************************************/
+/* Styling for the cart label positioned at the top right */
 .label-cart {
     position: fixed;
     top: 15px;
@@ -40,6 +48,7 @@ p {
     cursor: pointer;
 }
 
+/* Styling for the login link positioned at the top left */
 .login {
     position: fixed;
     color: var(--mainColor);
@@ -54,6 +63,8 @@ p {
     font-weight: 500;
 }
 
+
+/* Styling for the site logo centered at the top */
 .logo {
     position: fixed;
     background-color: var(--darkBlack);
@@ -65,6 +76,8 @@ p {
     z-index: 2;
 }
 
+/********************************************** SIDEBAR STYLING **********************************************/
+/* Styling for the sidebar on the left side */
 .sidebar {
     position: fixed;
     top: 0;
@@ -76,6 +89,7 @@ p {
     padding-top: 70px;
 }
 
+/* Styling for each item in the sidebar menu */
 .sidebar-menu {
     width: 100%;
     text-align: center;
@@ -83,6 +97,7 @@ p {
     color: var(--darkGrey);
 }
 
+/* Styling for links within the sidebar menu items */
 .sidebar-menu > a {
     text-decoration: none;
     font-size: 0.7rem;
@@ -90,15 +105,19 @@ p {
     color: var(--darkGrey);
 }
 
+/* Hover effect for sidebar menu items */
 .sidebar-menu:hover {
     border-right: 2px solid var(--yellow);
     color: var(--yellow);
 }
 
+/* Hover effect for sidebar menu links */
 .sidebar-menu:hover > a {
     color: var(--yellow);
 }
 
+/********************************************** DASHBOARD STYLING **********************************************/
+/* Main dashboard styling with padding for layout */
 .dashboard {
     height: 100%;
     width: 100%;
@@ -106,6 +125,7 @@ p {
     padding-left: 60px;
 }
 
+/* Styling for the dashboard banner section */
 .dashboard-banner {
     width: 100%;
     height: 300px;
@@ -116,6 +136,7 @@ p {
     cursor: pointer;
 }
 
+/* Styling for the banner image */
 .dashboard-banner > img {
     width: 100%;
     height: 100%;
@@ -123,6 +144,7 @@ p {
     border-radius: 30px;
 }
 
+/* Styling for promotional text on the banner */
 .banner-promo {
     position: absolute;
     color: var(--lightGrey);
@@ -131,14 +153,17 @@ p {
     font-weight: 800;
 }
 
+/* Styling for the highlighted part of the promotional text */
 .banner-promo > h1 > span {
     color: var(--yellow);
 }
 
+/* Styling for the title within the dashboard section */
 .dashboard-title {
     padding: 0 1rem;
 }
 
+/* Styling for the menu bar within the dashboard */
 .dashboard-menu {
     display: flex;
     gap: 10px;
@@ -146,6 +171,7 @@ p {
     overflow-x: auto;
 }
 
+/* Styling for each link in the dashboard menu */
 .dashboard-menu > a {
     text-decoration: none;
     text-align: center;
@@ -157,11 +183,13 @@ p {
     background-color: var(--lightGrey);
 }
 
+/* Hover effect for dashboard menu links */
 .dashboard-menu > a:hover {
     background-color: var(--darkBlack);
     color: var(--lightGrey);
 }
 
+/* Grid layout for dashboard content */
 .dashboard-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -169,6 +197,7 @@ p {
     padding: 0.5rem 1rem 1rem 1rem;
 }
 
+/* Styling for individual cards in the dashboard content */
 .dashboard-card {
     background-color: var(--mainColor);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -177,10 +206,12 @@ p {
     cursor: pointer;
 }
 
+/* Hover effect for dashboard cards */
 .dashboard-card:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+/* Styling for images within dashboard cards */
 .card-image {
     width: 100%;
     height: 150px;
@@ -188,20 +219,25 @@ p {
     border-radius: 15px;
 }
 
+/* Styling for card details within dashboard cards */
 .card-detail {
     padding: 10px;
 }
 
+/* Styling for price within card details */
 .card-detail > h4 > span {
     float: right;
 }
 
+/* Styling for time information within card details */
 .card-time {
     color: var(--darkGrey);
     font-size: 0.8rem;
     padding-top: 10px;
 }
 
+/********************************************** ORDER DASHBOARD STYLING **********************************************/
+/* Styling for the order dashboard */
 .dashboard-order {
     width: 340px;
     min-height: 100%;
@@ -213,19 +249,23 @@ p {
     z-index: 3;
 }
 
+/* Styling for the heading in the order dashboard */
 .dashboard-order > h3 {
     padding: 10px 0;
 }
 
+/* Styling for the address section in the order dashboard */
 .order-address > h4 {
     line-height: 2;
 }
 
+/* Styling for time and distance information in the order dashboard */
 .order-time {
     font-size: 0.8rem;
     color: var(--darkGrey);
 }
 
+/* Styling for the scrollable area containing order items */
 .order-wrapper {
     height: 180px;
     width: 100%;
@@ -233,7 +273,7 @@ p {
     margin: 20px 0;
 }
 
-/* custom scroll */
+/* Custom scrollbar styling for the order wrapper */
 
 .order-wrapper::-webkit-scrollbar {
     width: 7px;
@@ -249,6 +289,7 @@ p {
     border-radius: 20px;
 }
 
+/* Styling for individual order cards */
 .order-card {
     display: grid;
     grid-template-columns: 0.6fr 1fr 0.5fr;
@@ -258,6 +299,7 @@ p {
     align-items: flex-start;
 }
 
+/* Styling for images within order cards */
 .order-image {
     width: 70px;
     height: 70px;
@@ -265,6 +307,7 @@ p {
     border-radius: 15px;
 }
 
+/* Styling for quantity input within order cards */
 .order-detail > input {
     width: 35px;
     height: 35px;
@@ -275,20 +318,24 @@ p {
     margin-left: 10px;
 }
 
+/* Styling for dividers between sections in the order dashboard */
 .divider {
     width: 100%;
     border: 1px dashed var(--grey);
 }
 
+/* Styling for total price section in the order dashboard */
 .order-total > p {
     padding: 10px 0;
 }
 
+/* Styling for total price values */
 .order-total > p > span {
     float: right;
     font-weight: 600;
 }
 
+/* Styling for the promo code section in the order dashboard */
 .order-promo {
     display: flex;
     justify-content: space-between;
@@ -301,12 +348,14 @@ p {
     margin: 5px 0 10px 0;
 }
 
+/* Styling for the promo code input field */
 .input-promo {
     height: 100%;
     background-color: transparent;
     border: none;
 }
 
+/* Styling for the button to find a promo code */
 .button-promo {
     float: right;
     background-color: var(--yellow);
@@ -317,6 +366,7 @@ p {
     cursor: pointer;
 }
 
+/* Styling for the checkout button */
 .checkout {
     width: 100%;
     height: 40px;
@@ -328,42 +378,54 @@ p {
     cursor: pointer;
 }
 
+/* Hover effect for the checkout button */
 .checkout:hover {
     text-transform: uppercase;
     font-weight: 600;
 }
 
+/********************************************** CHECKBOX STYLING **********************************************/
+/* Hide the cart checkbox */
 #cart {
     display: none;
 }
 
+/* Adjust label-cart visibility and styling when the cart checkbox is checked */
 #cart:checked ~ .label-cart {
     color: var(--lightGrey);
 }
 
+/* Adjust dashboard padding when the cart checkbox is checked */
 #cart:checked ~ .dashboard {
     padding-right: 5px;
 }
 
+/* Adjust visibility of dashboard-order when the cart checkbox is checked */
 #cart:checked ~ .dashboard-order {
     display: none;
 }
 
+/* Adjust logo padding when the cart checkbox is checked */
 #cart:checked ~ .logo {
     padding-right: 0px;
 }
 
+/*! Responsive adjustments for screens smaller than 680px */
 @media screen and (max-width: 680px) {
+    /* Remove right padding from dashboard on smaller screens */
     .dashboard {
         padding-right: 0;
     }
 
+    /* Adjust dashboard-order width and position on smaller screens */
     .dashboard-order {
         width: 100%;
         left: 0;
     }
 }
 
+/********************************************** OVERLAY STYLING **********************************************/
+/* Styling for the overlay label positioned at the bottom left */
 .label-overlay {
     position: fixed;
     bottom: 5px;
@@ -373,18 +435,52 @@ p {
     cursor: pointer;
 }
 
+/* Hide the overlay checkbox */
 #overlay {
     display: none;
 }
 
+/* Adjust sidebar visibility when the overlay checkbox is checked */
 #overlay:checked ~ .sidebar {
     display: none;
 }
 
+/* Adjust overlay label position when the overlay checkbox is checked */
 #overlay:checked ~ .label-overlay {
     left: 5px;
 }
 
+/* Adjust dashboard position when the overlay checkbox is checked */
 #overlay:checked ~ .dashboard {
     padding-left: 5px;
+}
+
+/*************************************************** SEARCH STYLING*************************************************/
+
+/* Style for the container holding the search box */
+.searchbox {
+    padding-left: 15px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+/* Style for the search input field */
+.searchbox input {
+    width: 100%;
+    min-width: 50px;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border:none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the search icon inside the search box */
+.searchbox span {
+    position: relative;
+    top: 15px;
+    right: 4vh;
+    color: #555;
+    cursor: pointer;
 }
