@@ -13,8 +13,8 @@
         <mxCell id="26FgWxo71PYVIsLY0tGm-2" value="Login" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="190" y="270" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="26FgWxo71PYVIsLY0tGm-3" value="Username" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="200" y="320" width="60" height="30" as="geometry" />
+        <mxCell id="26FgWxo71PYVIsLY0tGm-3" value="Phone Number" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="160" y="320" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="26FgWxo71PYVIsLY0tGm-4" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="190" y="350" width="330" height="40" as="geometry" />
